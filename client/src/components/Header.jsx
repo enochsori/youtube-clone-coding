@@ -1,8 +1,9 @@
 import Searchbar from './Searchbar';
+import './header.css';
 
 const Header = () => {
   return (
-    <div>
+    <div className='header'>
       <i className='fa-brands fa-youtube logo'></i>
       <span className='title'>Youtube</span>
 

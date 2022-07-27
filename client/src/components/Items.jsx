@@ -1,9 +1,20 @@
-import { useState, useEffect } from 'react';
+import { useContext } from 'react';
+import { VideoContext } from './VideoContext';
+import Item from './Item';
+import './items.css';
 
 const Items = () => {
-  const [listItems, setListItems] = useState([]);
+  const { items } = useContext(VideoContext);
 
-  return <div></div>;
+  console.log(items);
+
+  return (
+    <div className='wrapper'>
+      {items.map((item) => (
+        <Item key={item.id} item={item.snippet} />
+      ))}
+    </div>
+  );
 };
 
 export default Items;
