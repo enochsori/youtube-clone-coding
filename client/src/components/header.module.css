@@ -1,0 +1,26 @@
+.header {
+  background-color: black;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8em 1em;
+  color: white;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.img {
+  color: red;
+  margin-right: 8px;
+}
+
+.title {
+  margin-right: 8px;
+  color: white;
+}

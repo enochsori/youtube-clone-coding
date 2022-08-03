@@ -1,14 +1,24 @@
-import Searchbar from './Searchbar';
-import './header.css';
+import { useNavigate } from "react-router-dom";
+import Searchbar from "./Searchbar";
+import styles from "./header.module.css";
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleNaviateTohome = () => {
+    console.log("clicked");
+    navigate("/");
+  };
+
   return (
-    <div className='header'>
-      <i className='fa-brands fa-youtube logo'></i>
-      <span className='title'>Youtube</span>
+    <header className={styles.header}>
+      <div onClick={handleNaviateTohome} className={styles.logo}>
+        <img src="/images/logo.png" alt="logo image" className={styles.img} />
+        <h1 className={styles.title}>Youtube</h1>
+      </div>
 
       <Searchbar />
-    </div>
+    </header>
   );
 };
 

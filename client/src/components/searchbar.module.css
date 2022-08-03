@@ -1,0 +1,27 @@
+.search {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.input {
+  height: 100%;
+  width: 80%;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 1.2rem;
+  outline: 0;
+  border: none;
+}
+
+.button {
+  background-color: darkgrey;
+  height: 100%;
+  border-radius: 0.5em;
+  border: none;
+}
+
+.buttonImage {
+  padding: 0.5rem 0.2rem;
+  height: 100%;
+}
