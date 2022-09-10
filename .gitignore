@@ -1,0 +1,6 @@
+client/src/components/VideoContext.jsx
+client/.env
+client/yarn.lock
+
+#APIkey
+.env

@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { VideoContext } from "../VideoContext";
-import Items from "../video_items/Items";
 
 const ItemDetail = () => {
   // Get teh item id from url

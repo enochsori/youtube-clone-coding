@@ -1,12 +1,10 @@
 import { useState, useEffect, createContext } from "react";
-import Youtube from "../service/youtubeService";
 
 // Create context
 export const VideoContext = createContext(null);
 
 // Creat context provider
-const VideoProvider = ({ children }) => {
-  const youtube = new Youtube();
+const VideoProvider = ({ children, youtube }) => {
   const [items, setItems] = useState([]);
 
   // Fetching new data wih user input keyowrd

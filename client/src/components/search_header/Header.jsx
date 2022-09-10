@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div onClick={handleNaviateTohome} className={styles.logo}>
-        <img src='/images/logo.png' alt='logo image' className={styles.img} />
+        <img src='/images/logo.png' alt='logo' className={styles.img} />
         <h1 className={styles.title}>Youtube</h1>
       </div>
       <Searchbar />
